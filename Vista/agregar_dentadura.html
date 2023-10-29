@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Agregar descripcion del diente</h1>
+    <label for="numero_diente">Numero de Diente:</label>
+    <input type="number" id="numero_diente" name="numero_diente"><br>
+    <label for="diente">Diente:</label>
+    <input type="text" id="diente" name="diente"><br>
+    <label for="estado">Tratamiento:</label>
+    <input type="text" id="estado" name="estado"><br>
+    <button id="btnGuardar">Guardar descripcion</button><br><br>
+    <img src="imagenes/dentadura paciente.jpg" width="650px" height="500px" alt="">
+    <script>
+        // Botón para guardar una nueva entrada
+        document.getElementById("btnGuardar").addEventListener("click", function () {
+            // Obtén los valores del diente y estado del formulario
+            const nuevoDiente = document.getElementById("diente").value;
+            const nuevoEstado = document.getElementById("estado").value;
+
+            // Redirige de vuelta a la página "tabla.html" y pasa los datos como parámetros en la URL
+            window.location.href = `Gestionar_dentadura.html`;
+        });
+    </script>
+</body>
+
+</html>
