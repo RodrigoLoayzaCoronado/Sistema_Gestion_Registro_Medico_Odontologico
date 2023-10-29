@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos_paginas.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Clínica Dental</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Equipo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
     <h1>Gestión de Pacientes</h1>
     
     <!-- Formulario para agregar paciente -->
@@ -25,7 +43,7 @@
         <label for="telefono">Teléfono:</label>
         <input type="text" id="telefono" name="telefono" required><br><br>
 
-        <button type="submit">Agregar Paciente</button>
+        <button type="submit" class="custom-button">Agregar Paciente</button>
     </form>
 
     <h2>Lista de Pacientes</h2>
