@@ -8,9 +8,9 @@ body {
 }
 
 header {
-  background-color: rgb(34, 126, 206);
+  background-color: rgb(21, 84, 139);
   background: linear-gradient(to right, #2bd664, #013e69);
-  color: #fff;
+  color: #020202;
   border-radius: 5px;
   padding: 10px 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -25,8 +25,8 @@ header {
 }
 .logo a {
   text-decoration: none;
-  color: #fff;
-  font-size: 24px;
+  color: #b6eccf;
+  font-size: 34px;
   font-weight: bold;
 }
 .menu {
@@ -55,12 +55,59 @@ header {
 
 
 
+.contenedorFlex{
+  display: flex;
+  gap: 20px;
+  justify-content:space-around;
+  flex-direction:row-reverse;
+}
+
+
+
+
+
+
+
+.input-container {
+  width: 20%; /* Ajusta el ancho del contenedor según tus necesidades */
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-container input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Puedes ajustar el ancho aquí */
+}
+
+.input-container input::placeholder {
+  color: #999;
+}
+
+.input-container input:focus {
+  border-color: #3498db;
+}
+
+
+
+
+
+
+
+
+
 
 
 
 .custom-button {
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: rgb(21, 84, 139);
   color: #fff;
   font-weight: bold;
   border: none;
@@ -71,6 +118,24 @@ header {
 }
 
 .custom-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.link{
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: rgb(21, 84, 139);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.link:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }

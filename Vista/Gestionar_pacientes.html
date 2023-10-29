@@ -23,9 +23,9 @@
 
 
 
-
+<div class="contenedorFlex">
+    <div class="input-container">
     <h1>Gestión de Pacientes</h1>
-    
     <!-- Formulario para agregar paciente -->
     <form id="agregar-paciente-form">
         <label for="ci">CI:</label>
@@ -45,7 +45,8 @@
 
         <button type="submit" class="custom-button">Agregar Paciente</button>
     </form>
-
+</div>
+<div class="lista">
     <h2>Lista de Pacientes</h2>
     <table border="1">
         <thead>
@@ -62,7 +63,8 @@
         <tbody id="pacientes-table">
         </tbody>
     </table>
-
+</div>
+</div>
     <script>
         class Paciente {
             constructor(id, ci, nombre, apellido, direccion, telefono) {
@@ -96,7 +98,7 @@
                         <td><input type="text" value="${paciente.direccion}"></td>
                         <td><input type="text" value="${paciente.telefono}"></td>
                         <td>
-                            <button onclick="guardarEdicion(${paciente.id})">Guardar</button>
+                            <button onclick="guardarEdicion(${paciente.id}) class="custom-button"">Guardar</button>
                         </td>
                     `;
                 } else {
@@ -108,9 +110,9 @@
                         <td>${paciente.direccion}</td>
                         <td>${paciente.telefono}</td>
                         <td>
-                            <button onclick="editarPaciente(${paciente.id})">Editar</button>
-                            <button onclick="eliminarPaciente(${paciente.id})">Eliminar</button>
-                            <button><a href="Gestionar_dentadura.html"> Gestionar Dentadura</a></button>
+                            <button onclick="editarPaciente(${paciente.id})" class="custom-button">Editar</button>
+                            <button onclick="eliminarPaciente(${paciente.id})" class="custom-button">Eliminar</button>
+                            <a href="Gestionar_dentadura.html" class ="link"> Gestionar Dentadura</a>
                         </td>
                     `;
                 }
