@@ -25,7 +25,7 @@
 
 <div class="contenedorFlex">
     <div class="input-container">
-    <h1>Gestión de Pacientes</h1>
+    <h1 class="titulo-pagina2">Gestión de Pacientes</h1>
     <!-- Formulario para agregar paciente -->
     <form id="agregar-paciente-form">
         <label for="ci">CI:</label>
@@ -47,7 +47,7 @@
     </form>
 </div>
 <div class="lista">
-    <h2>Lista de Pacientes</h2>
+    <h2 class="titulo-pagina">Lista de Pacientes</h2>
     <table border="1">
         <thead>
             <tr>
@@ -98,7 +98,7 @@
                         <td><input type="text" value="${paciente.direccion}"></td>
                         <td><input type="text" value="${paciente.telefono}"></td>
                         <td>
-                            <button onclick="guardarEdicion(${paciente.id}) class="custom-button"">Guardar</button>
+                            <button onclick="guardarEdicion(${paciente.id})" class="custom-button">Guardar</button>
                         </td>
                     `;
                 } else {
