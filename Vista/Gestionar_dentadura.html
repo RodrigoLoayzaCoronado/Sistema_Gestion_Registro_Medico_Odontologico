@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estiloDentadura.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Gestión de Dentadura Paciente</h1>
-    <table id="tablaDentadura">
+    <h1 class="titulo">Gestión de Dentadura Paciente</h1>
+    <table id="tablaDentadura" class="tabla">
         <tr>
             <th>Número de Diente</th>
             <th>Diente</th>
@@ -19,8 +20,9 @@
         <tbody>
         </tbody>
     </table>
-    <button id="btnAgregar">Agregar</button><br>
-
+    <div class="btnAgregar">
+    <button id="btnAgregar" >Agregar</button><br>
+    </div>
     <script>
         // Lista para llevar un seguimiento de las entradas actuales
         const entradas = [];

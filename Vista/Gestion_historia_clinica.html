@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloHistoria.css">
     <title>Document</title>
 </head>
+<div class="titulo">
 <h1>Gestión de Historia Clínica</h1>
-
+</div>
 <!-- Formulario para agregar historia clínica -->
+<div class="formulario"> 
 <form id="agregar-historia-clinica-form">
     <label for="nombre-paciente">Nombre del Paciente:</label>
     <input type="text" id="nombre-paciente" name="nombre-paciente" required><br><br>
@@ -27,8 +30,9 @@
     <button type="submit">Agregar Historia Clínica</button>
     <button><a href="Gestionar_pacientes.html"> Gestionar Pacientes</a></button>
 </form>
-
+</div>
 <h2>Lista de Historias Clínicas</h2>
+<div class="lista">
 <table border="1">
     <thead>
         <tr>
@@ -44,7 +48,7 @@
     <tbody id="historias-clinicas-table">
     </tbody>
 </table>
-
+</div>
 <script>
     class HistoriaClinica {
         constructor(id, nombrePaciente, edadPaciente, diagnostico, tratamiento, pruebas) {

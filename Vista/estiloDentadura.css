@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap');
+
+*{
+    font-family: 'Montserrat';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #75e59b, #003350);
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btnAgregar{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btnAgregar button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border-style: none;
+    color: #003350;
+    font-weight: medium;
+    font-size: larger;
+    background-color: #75e59b;
+}
